@@ -1,0 +1,3 @@
+name: Simplessentials
+version: ${project.version}
+main: net.pabszito.simplessentials.Simplessentials
