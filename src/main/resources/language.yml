@@ -1,0 +1,3 @@
+language:
+  join_message: '&8* &e%player% &rjoined the game!' # If the join message is "none", nothing will appear.
+  quit_message: '&8* &e%player% &rleft the game.' # Same here. If the quit message is "none", nothing will appear.
