@@ -12,3 +12,6 @@ commands:
   workbench:
     description: Opens a workbench.
     aliases: [sworkbench]
+  enderchest:
+    description: Opens your ender chest.
+    aliases: [ec,sec,senderchest]
