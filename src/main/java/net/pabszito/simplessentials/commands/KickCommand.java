@@ -19,9 +19,6 @@ public class KickCommand implements CommandExecutor {
     @Inject @Named("config")
     private Configuration config;
 
-    @Inject
-    private Simplessentials plugin;
-
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if(!(sender instanceof Player)){
