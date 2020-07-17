@@ -9,7 +9,6 @@ language:
   kick:
     usage: "&8[&c!&8] &rUsage: &a/kick <player> [reason]"
     unable_to_kick: "&8[&c!&8] &rYou can't kick that player!"
-
     kicked_screen: |-
       &c&lYOU HAVE BEEN KICKED!
       &7
@@ -18,3 +17,6 @@ language:
       &7
       &7If this is an error, consider contacting support.
       &a&nhttps://discord.gg/thisisarealinvitetrustme
+  tphere:
+    usage: "&8[&c!&8] &rUsage: &a/tphere <player>"
+    teleported: "&8[&c!&8] &rTeleported &a%player% &rto your current location."
