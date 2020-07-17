@@ -2,7 +2,13 @@ package net.pabszito.simplessentials.manager;
 
 import me.yushust.inject.Inject;
 import net.pabszito.simplessentials.Simplessentials;
-import net.pabszito.simplessentials.commands.*;
+import net.pabszito.simplessentials.commands.EnderchestCommand;
+import net.pabszito.simplessentials.commands.InvseeCommand;
+import net.pabszito.simplessentials.commands.KickCommand;
+import net.pabszito.simplessentials.commands.WorkbenchCommand;
+import net.pabszito.simplessentials.commands.TphereCommand;
+import net.pabszito.simplessentials.commands.MemoryCommand;
+import net.pabszito.simplessentials.commands.BroadcastCommand;
 
 public class CommandManager {
 
