@@ -15,3 +15,6 @@ commands:
   enderchest:
     description: Opens your ender chest.
     aliases: [ec,sec,senderchest]
+  tphere:
+    descriptions: Teleports a player to your current location.
+    aliases: [stphere]
