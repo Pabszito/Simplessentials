@@ -20,3 +20,13 @@ language:
   tphere:
     usage: "&8[&c!&8] &rUsage: &a/tphere <player>"
     teleported: "&8[&c!&8] &rTeleported &a%player% &rto your current location."
+  memory:
+    assigned_memory: "&8[&c!&8] &rAssigned memory: &e%memory%"
+    max_memory: "&8[&c!&8] &rMax memory: &e%memory%"
+    free_memory: "&8[&c!&8] &rFree memory: &e%memory%"
+    world: "&8[&c!&8] &rWorld &e%world%&r; type: &e%type%&r; &rloaded chunks: &e%loaded_chunks%&r; entities: &e%entities%&r; tile entities: &e%tile_entities%&r."
+    types:
+      overworld: "Overworld"
+      nether: "Nether"
+      the_end: "The End"
+      unknown: "Unknown"

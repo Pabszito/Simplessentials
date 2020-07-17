@@ -18,3 +18,6 @@ commands:
   tphere:
     descriptions: Teleports a player to your current location.
     aliases: [stphere]
+  memory:
+    description: Shows information about the server memory.
+    aliases: [smemory,mem,smem]

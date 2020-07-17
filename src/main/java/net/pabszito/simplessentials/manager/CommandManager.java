@@ -22,6 +22,9 @@ public class CommandManager {
     private TphereCommand tphereCommand;
 
     @Inject
+    private MemoryCommand memoryCommand;
+
+    @Inject
     private Simplessentials plugin;
 
     public void setup(){
@@ -30,5 +33,6 @@ public class CommandManager {
         plugin.getCommand("workbench").setExecutor(workbenchCommand);
         plugin.getCommand("enderchest").setExecutor(enderchestCommand);
         plugin.getCommand("tphere").setExecutor(tphereCommand);
+        plugin.getCommand("memory").setExecutor(memoryCommand);
     }
 }
