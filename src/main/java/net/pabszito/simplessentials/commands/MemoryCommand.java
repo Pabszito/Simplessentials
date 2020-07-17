@@ -12,7 +12,8 @@ import org.bukkit.command.CommandSender;
 
 public class MemoryCommand implements CommandExecutor {
 
-    @Inject @Named("language")
+    @Inject
+    @Named("language")
     private Configuration language;
 
     @Override
@@ -34,32 +35,32 @@ public class MemoryCommand implements CommandExecutor {
         Bukkit.getWorlds().forEach((world) -> {
             String type;
             World.Environment environment = world.getEnvironment();
-            switch(environment){
-                case NORMAL:{
+            switch (environment) {
+                case NORMAL: {
                     type = language.getString("language.memory.types.overworld");
                     break;
                 }
-                case NETHER:{
+                case NETHER: {
                     type = language.getString("language.memory.types.nether");
                     break;
                 }
-                case THE_END:{
+                case THE_END: {
                     type = language.getString("language.memory.types.the_end");
                     break;
                 }
-                default:{
+                default: {
                     type = language.getString("language.memory.types.unknown");
                     break;
                 }
             }
 
             int tileEntities = 0;
-            try{
-                for(Chunk chunk : world.getLoadedChunks()){
+            try {
+                for (Chunk chunk : world.getLoadedChunks()) {
                     tileEntities += chunk.getTileEntities().length;
                 }
-            }catch(ClassCastException exception){
-                Bukkit.getLogger().warning("[Simplessentials] Could not get chunk data at world "+world.getName());
+            } catch (ClassCastException exception) {
+                Bukkit.getLogger().warning("[Simplessentials] Could not get chunk data at world " + world.getName());
                 exception.printStackTrace();
             }
 

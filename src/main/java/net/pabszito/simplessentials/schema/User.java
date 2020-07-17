@@ -11,10 +11,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-@Entity("User") @SerializableAs("User") @NoArgsConstructor(access = AccessLevel.PRIVATE)
+@Entity("User")
+@SerializableAs("User")
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class User implements Schema, ConfigurationSerializable {
 
-    @Id @Getter
+    @Id
+    @Getter
     private UUID id;
 
     @Override

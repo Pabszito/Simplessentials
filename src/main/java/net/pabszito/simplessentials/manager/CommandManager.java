@@ -27,7 +27,7 @@ public class CommandManager {
     @Inject
     private Simplessentials plugin;
 
-    public void setup(){
+    public void setup() {
         plugin.getCommand("invsee").setExecutor(invseeCommand);
         plugin.getCommand("kick").setExecutor(kickCommand);
         plugin.getCommand("workbench").setExecutor(workbenchCommand);

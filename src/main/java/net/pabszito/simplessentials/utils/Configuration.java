@@ -15,7 +15,7 @@ public class Configuration extends YamlConfiguration {
     private final JavaPlugin plugin;
     private final File folder;
 
-    public Configuration(JavaPlugin plugin, String filename, String fileExtension, File folder){
+    public Configuration(JavaPlugin plugin, String filename, String fileExtension, File folder) {
         this.folder = folder;
         this.plugin = plugin;
         this.fileName = filename + (filename.endsWith(fileExtension) ? "" : fileExtension);
@@ -31,44 +31,44 @@ public class Configuration extends YamlConfiguration {
     }
 
     @Override
-    public String getString(String path){
-        try{
+    public String getString(String path) {
+        try {
             return ChatColor.translateAlternateColorCodes('&', super.getString(path));
-        }catch(NullPointerException e){
+        } catch (NullPointerException e) {
             return path;
         }
     }
 
     public ItemStack getItemStack(String path, ItemStack def) {
-        if(!this.contains(path)) return def;
+        if (!this.contains(path)) return def;
         return super.getItemStack(path);
     }
 
     public List<String> getStringList(String path, List<String> def) {
-        if(!super.contains(path)) return def;
+        if (!super.contains(path)) return def;
         return super.getStringList(path);
     }
 
     public List<String> getColoredStringList(String path) {
         List<String> coloredStringList = super.getStringList(path);
-        for(int i = 0; i < coloredStringList.size(); i++){
+        for (int i = 0; i < coloredStringList.size(); i++) {
             coloredStringList.set(i, ChatColor.translateAlternateColorCodes('&', coloredStringList.get(i)));
         }
         return coloredStringList;
     }
 
-    public int getInt(String path){
+    public int getInt(String path) {
         int integer = super.getInt(path);
         return integer;
     }
 
-    public int getInt(String path, int def){
+    public int getInt(String path, int def) {
         int integer = super.getInt(path, def);
         return integer;
     }
 
-    public <T> T get(Class<T> clazz, String path){
-        if(!super.contains(path)) return null;
+    public <T> T get(Class<T> clazz, String path) {
+        if (!super.contains(path)) return null;
         Object obj = super.get(path);
         return clazz.cast(obj);
     }

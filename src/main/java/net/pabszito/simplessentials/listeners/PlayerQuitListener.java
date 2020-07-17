@@ -10,19 +10,21 @@ import org.bukkit.event.player.PlayerQuitEvent;
 
 public class PlayerQuitListener implements Listener {
 
-    @Inject @Named("config")
+    @Inject
+    @Named("config")
     private Configuration config;
 
-    @Inject @Named("language")
+    @Inject
+    @Named("language")
     private Configuration language;
 
     @EventHandler
-    public void onPlayerQuit(PlayerQuitEvent event){
+    public void onPlayerQuit(PlayerQuitEvent event) {
         Player player = event.getPlayer();
         String quitMessage = language.getString("language.quit_message")
                 .replace("%player%", player.getName());
 
-        if(!config.getBoolean("config.change_quit_message")) return;
+        if (!config.getBoolean("config.change_quit_message")) return;
 
         event.setQuitMessage(quitMessage.equalsIgnoreCase("none") ? null : quitMessage);
     }

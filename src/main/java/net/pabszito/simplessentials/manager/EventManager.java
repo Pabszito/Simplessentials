@@ -18,7 +18,7 @@ public class EventManager {
     @Inject
     private PlayerQuitListener playerQuitListener;
 
-    public void setup(){
+    public void setup() {
         PluginManager pluginManager = Bukkit.getServer().getPluginManager();
         pluginManager.registerEvents(playerJoinListener, plugin);
         pluginManager.registerEvents(playerQuitListener, plugin);

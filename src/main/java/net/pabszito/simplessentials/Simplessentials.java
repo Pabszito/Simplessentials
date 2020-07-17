@@ -30,16 +30,16 @@ public class Simplessentials extends JavaPlugin {
         getLogger().info("Simplessentials has been disabled.");
     }
 
-    private void setupInjector(){
+    private void setupInjector() {
         Injector injector = InjectorFactory.create(new BinderModule(this));
         injector.injectMembers(this);
     }
 
-    private void setupListeners(){
+    private void setupListeners() {
         eventManager.setup();
     }
 
-    private void setupCommands(){
+    private void setupCommands() {
         commandManager.setup();
     }
 }

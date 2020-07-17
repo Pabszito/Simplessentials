@@ -10,19 +10,21 @@ import org.bukkit.event.player.PlayerJoinEvent;
 
 public class PlayerJoinListener implements Listener {
 
-    @Inject @Named("config")
+    @Inject
+    @Named("config")
     private Configuration config;
 
-    @Inject @Named("language")
+    @Inject
+    @Named("language")
     private Configuration language;
 
     @EventHandler
-    public void onPlayerJoin(PlayerJoinEvent event){
+    public void onPlayerJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
         String joinMessage = language.getString("language.join_message")
                 .replace("%player%", player.getName());
 
-        if(!config.getBoolean("config.change_join_message")) return;
+        if (!config.getBoolean("config.change_join_message")) return;
 
         event.setJoinMessage(joinMessage.equalsIgnoreCase("none") ? null : joinMessage);
     }

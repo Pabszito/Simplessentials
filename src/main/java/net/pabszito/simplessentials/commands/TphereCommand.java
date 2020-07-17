@@ -11,7 +11,8 @@ import org.bukkit.entity.Player;
 
 public class TphereCommand implements CommandExecutor {
 
-    @Inject @Named("language")
+    @Inject
+    @Named("language")
     private Configuration language;
 
     @Override
