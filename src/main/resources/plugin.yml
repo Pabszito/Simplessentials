@@ -1,3 +1,14 @@
 name: Simplessentials
 version: ${project.version}
 main: net.pabszito.simplessentials.Simplessentials
+
+commands:
+  invsee:
+    description: Opens a player inventory.
+    aliases: [inventorysee,sinvsee,sinventorysee]
+  kick:
+    description: Kicks a player.
+    aliases: [skick]
+  workbench:
+    description: Opens a workbench.
+    aliases: [sworkbench]

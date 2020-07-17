@@ -1,3 +1,4 @@
 config:
   change_join_message: true
   change_quit_message: true
+  default_kick_reason: "Spamming"

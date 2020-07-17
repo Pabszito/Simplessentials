@@ -1,3 +1,20 @@
 language:
   join_message: '&8* &e%player% &rjoined the game!' # If the join message is "none", nothing will appear.
   quit_message: '&8* &e%player% &rleft the game.' # Same here. If the quit message is "none", nothing will appear.
+  no_permissions: "&8[&c!&8] &rYou don't have permissions to execute that command."
+  not_a_player: "&8[&c!&8] &rYou need to be a player to execute that command!"
+  player_not_found: "&8[&c!&8] &rWhoops, player not found."
+  invsee:
+    usage: "&8[&c!&8] &rUsage: &a/invsee <player>"
+  kick:
+    usage: "&8[&c!&8] &rUsage: &a/kick <player> [reason]"
+    unable_to_kick: "&8[&c!&8] &rYou can't kick that player!"
+
+    kicked_screen: |-
+      &c&lYOU HAVE BEEN KICKED!
+      &7
+      &7Staff: &e%staff%
+      &7Reason: &e%reason%
+      &7
+      &7If this is an error, consider contacting support.
+      &a&nhttps://discord.gg/thisisarealinvitetrustme
