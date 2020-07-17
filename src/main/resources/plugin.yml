@@ -21,3 +21,6 @@ commands:
   memory:
     description: Shows information about the server memory.
     aliases: [smemory,mem,smem]
+  broadcast:
+    description: Broadcasts a message.
+    aliases: [bc,sbc,sbroadcast]

@@ -30,3 +30,6 @@ language:
       nether: "Nether"
       the_end: "The End"
       unknown: "Unknown"
+  broadcast:
+    usage: "&8[&c!&8] &rUsage: &a/broadcast <text>"
+    format: "&8[&c!&8] &r%text%"
