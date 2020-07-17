@@ -4,6 +4,7 @@ import me.yushust.inject.Inject;
 import me.yushust.inject.name.Named;
 import net.pabszito.simplessentials.utils.Configuration;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -25,7 +26,7 @@ public class BroadcastCommand implements CommandExecutor {
             return true;
         }
 
-        String text = String.join(" ", args);
+        String text = ChatColor.translateAlternateColorCodes('&', String.join(" ", args));
         Bukkit.broadcastMessage(language.getString("language.broadcast.format").replace("%text%", text));
         return false;
     }
